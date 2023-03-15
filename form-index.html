@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/form-style.css">
+    <title>Check-out Form</title>
+
+</head>
+<body>
+    <nav></nav>
+    <h1>CHECKOUT FORM</h1>
+    
+    <form action="Table.html" method="#">
+
+        <div class="order-info">
+            <span>Recepient's Name</span>
+            <div class="name">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <span>Address</span>
+            <div class="address">
+                <div>
+                <label for="userProvince">Province:</label>
+                <input type="text" name="userProvince">
+                </div>
+
+                <div>
+                <label for="userMunicipality">Municipality:</label>
+                <input type="text" name="userMunicipality">
+                </div>
+
+                <div>
+                <label for="userBarangay">Barangay:</label>
+                <input class="barangay" type="text" name="userBarangay">
+                </div>
+
+                <div>
+                <label 
+                for="userStreet">Street/Building Name:</label>
+                <input type="text" name="userStreet">
+                </div>
+
+                <div>
+                <label for="userUnit">Unit/Floor</label>
+                <input type="text" name="userUnit">
+                </div>
+            </div>
+
+            <div class="contact">
+                <label for="userEmail">Email:</label>
+                <input type="email" name="userEmail" id="userEmail">
+                <label for="userMobile">Mobile Number:</label>
+                <input type="tel" name="userMobile" id="userMobile" pattern="[0]{1}[9]{1}[0-9]{9}">
+
+            </div>
+
+            <!-- Payment Method -->
+            <div class="payment">
+                <p>Choose Payment Method:</p>
+                <input type="radio" id="Debit/Credit" name="payment" value="Debit/Credit">
+                <label for="Debit/Credit">Debit/Credit</label>
+
+                <input type="radio" id="cashonDelivery" name="payment" value="cashonDelivery">
+                <label for="cashonDelivery">Cash on Delivery</label>
+
+                <input type="radio" id="gCash" name="payment" value="Gcash">
+                <label for="gCash">Gcash</label>
+            </div>
+            <!-- Submit -->
+            <div class="place-order">
+                <input type="submit" value="Place Order">
+            </div>
+
+
+        </div>
+
+    </form>
+    
+</body>
+</html>

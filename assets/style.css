@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&display=swap');
+
+body{
+    height:3000px;
+    margin:0;
+    background-image: url(image/istockphoto-1151849228-612x612.jpg)
+}
+
+.nav-shelf{
+        width: 100%;
+        height: 100px;
+        background-color: #040200;
+        display: flex;
+        justify-content:center;
+}
+.material-symbols-sharp{
+    color: bisque;
+    font-size: 50px;
+    margin:25px 5px 25px 10px
+
+}
+.intro {
+    color: aliceblue;
+    margin:25px 100px 0 5px;
+}
+.website{
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    display: block;
+}
+.saying{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+.search{
+    margin:25px 25px 25px 400px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.search input{
+    width:400px;
+    height:40px;
+
+}
+.card-container{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    /* background-color: aliceblue; */
+    margin:50px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.product-card{
+    width:450px;
+    height:700px;
+    background-color:rgb(253, 249, 249);
+    margin: 10px 0 0;
+    border: 5px solid black;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-cover img{
+    width:300px;
+    height:400px;
+    margin:40px 5px 0;
+}
+.text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:300px;
+}
+.price-cart{
+    display: flex;
+    /* border: 1px solid; */
+}
+.material-symbols-outlined{
+    width:20px;
+    height:20px;
+    color: red;
+    margin: 0 2px 0;
+    padding:2px;
+
+}
+
+.price{
+    width:70px;
+    background-color: orange;
+    font-size: 25px;
+    margin:0 130px 0 0;
+}
+.title{
+    display: block;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 0;
+    text-align: center;
+}
+.author{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    font-size: 18px;
+}
+.buy-now{
+    width:110px;
+    height:50px;
+    font-size:18px;
+    background-color: orange;
+}
+.footer{
+        width: 100%;
+        height: 50px;
+        background-color: #040200;
+        display: flex;
+        margin:200px 0 0;
+        justify-content: space-evenly;
+        color:aliceblue;
+        font-family: 'Anton', sans-serif;
+        font-size: 25px;
+        padding:25px 0 10px 0;
+        position: fixed;
+        bottom: 0;
+}
+@media
+(max-width:1195px)
+{   body{
+    width:1195px;
+}
+    .nav-shelf{
+        height: 100px;
+        background-color: #040200;
+        display: flex;
+        justify-content:center;
+    }
+    .material-symbols-sharp{
+    color: bisque;
+    font-size: 50px;
+    margin:0;
+    }
+}
+@media(max-width:911px){
+    .card-container{
+        display: flex;
+        align-items: center;
+    }
+    .product-card{
+    width:700px;
+    height:450px;
+    background-color:rgb(253, 249, 249);
+    margin: 10px 0 0;
+    border: 5px solid black;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.book-cover img{
+    width:300px;
+    height:400px;
+    margin:10px 5px 10px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid; */
+    width:350px;
+    height:400px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+}
+
+
+@media
+(max-width:500px){
+    body{
+        width:500px;
+        height:3300px;
+    }
+    .nav-shelf{
+        width: 500px;
+        height: 100px;
+        background-color: #040200;
+        display: flex;
+        justify-content:left;
+    }
+    .material-symbols-sharp{
+        color: bisque;
+        font-size: 40px;
+        margin:25px 5px 25px 25px;
+    
+    }
+    .intro {
+        color: aliceblue;
+        margin:25px 50px 0 0;
+    }
+    .website{
+        font-family: 'Anton', sans-serif;
+        font-size: 15px;
+        display: block;
+    }
+    .saying{
+        font-family: 'Caveat', cursive;
+        font-size: 15px;
+    }
+    .search{
+        margin:30px 10px 0 10px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .search input{
+        width:150px;
+        height:20px;
+    
+    }
+    .card-container{
+        width:500px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-card{
+        width:300px;
+        height:480px;
+        background-color:rgb(253, 249, 249);
+        border: 5px solid black;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .book-cover img{
+        width:200px;
+        height:250px;
+        margin:20px 5px 0;
+    }
+    .text{
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        width:200px;
+    }
+    .price-cart{
+        width:200px;
+        display: flex;
+        flex-direction: row;
+        /* border:1px solid #040200; */
+        justify-items: center;
+    }
+    .price{
+        width:70px;
+        background-color: orange;
+        font-size: 20px;
+        margin:0 30px 0 0;
+    }
+    .material-symbols-outlined{
+        width:20px;
+        height:15px;
+        color: red;
+        margin: 0 2px 0;
+        /* padding:2px; */
+    }
+    .title{
+        display: block;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 2px 0 0;
+    }
+    .author{
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
+    ul{
+        font-size: 15px;
+    }
+    .buy-now{
+        width:90px;
+        height:40px;
+        font-size:15px;
+        background-color: orange;
+    }
+    .footer{
+        width: 500px;
+        height: 50px;
+        background-color: #040200;
+        display: flex;
+        justify-content: space-around;
+        position:fixed;
+        bottom: 0;
+        padding: 30px 0 0 0;
+        font-size: 20px;
+    }
+}
